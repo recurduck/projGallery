@@ -1,0 +1,194 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #686055; 
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:grey;
+    font-family: 'Fredoka One', cursive;
+    transition: background 1s;
+    text-align: center;
+}
+.dark-mode {
+    background-color: black;
+    background-image: url("../img/backgroundDark.jpg");
+}
+
+h1, .container {
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(0, 100, 0, 0.185);
+    border-radius: 10px;
+    width:fit-content;
+}
+
+/* Details */
+.details {
+    background-color: #556b2f87;
+    color: black;
+    margin: 9px 1px;
+    padding: 5px;
+    width: fit-content;
+    border-radius: 10px;
+    font-weight: 600;
+    display: inline-block;
+}
+.details-dark {
+    background-color: #0607044d;
+    color: #556b2f;
+}
+
+
+/* Buttons */
+button:focus {
+    outline: 0px;
+}
+.btn {
+    height:30px;
+    margin: 2px;
+    background-color: darkolivegreen;
+    font-size: large;
+    font-family: 'Fredoka One', cursive;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-blocks;
+}
+.btn:hover {
+    background-color: #494625cc;
+}
+.btn-disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+.btn-dark {
+    background-color: #5329294d;
+    color: darkslategray;
+}
+.btn-field {
+    background-color: grey;
+    width:100%;
+    height: 100%;
+    transition: 0.2s;
+    cursor: help;
+}
+.btn-field:hover {
+    background-color: darkgray;
+}
+.btn-field:active {
+    background-color: #ff0000;
+    transform: translateY(1px);
+}
+
+
+/* Table */
+table {
+    border: 10px solid rgba(2, 71, 2, 0.062);
+    table-layout:fixed;
+}
+table,.cell {
+    background-color: rgba(2, 71, 2, 0.527);;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    outline: auto;
+}
+.cell {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 1.5em;
+}
+.table-dark {
+    outline: none;
+}
+
+/* Radio Input */ 
+.radio-label {
+    color: black;
+    margin: 2px;
+    padding: 0px 5px;
+    font-weight: 600;
+    background-color: rgba(221, 178, 122, 0.384);
+    border-radius: 10px;
+}
+
+/* Extra specify elements */
+.status , .credit{
+    margin: auto;
+    width: fit-content;
+    border-radius: 45%;
+    display: block;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 54px;
+    height: 28px;
+    left: 30px;
+}
+  
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(221, 178, 122, 0.384);
+    box-shadow: 0 0 3px #000000;
+    transition: .4s;
+}
+.slider:hover {
+    box-shadow: 0 0 3px yellow;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #494625cc;
+    transition: .4s;
+}
+  
+input:checked + .slider {
+    background-color: #5329294d;
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+  
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+  
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* input number */
+.custom input {
+    width: 3em;
+}

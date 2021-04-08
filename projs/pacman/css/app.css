@@ -1,0 +1,55 @@
+body {
+  background-color: black;
+  color:white;
+}
+
+.cell {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.modal { 
+  background-color: black;
+  margin: 220px 220px auto;
+  padding: 40px;
+  color: blue;
+  border: 3px solid yellow;
+  position:absolute;
+  text-align: center;
+  width: 200px;
+  height: 200px;
+}
+.board-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+img {
+  width: 27px;
+  height: 27px; 
+}
+
+.wall {
+  width: auto;
+  height: 40px;
+  color: 2px solid greenyellow;
+  box-shadow: 0px 0px 15px rgb(94, 255, 0);
+}
+
+.food {
+  width: 5px;
+  height: 5px;
+  margin: 0 auto;
+  background-color: white;
+  
+}
+
+/* .formLine {
+  margin:10px;
+  padding:10px;
+  background-color: cornflowerblue;
+} */

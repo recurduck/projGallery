@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightgoldenrodyellow;
+    font-family: 'Indie Flower', cursive;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+button {
+    cursor: pointer;
+}
+button:focus {
+    outline: 0px;
+}
+
+.todo-list {
+    background-color: #fdf795;
+    padding: 10px;
+    flex-basis: 90%;
+}
+
+.btn-remove {
+    border: 0;
+    border-radius: 50%;
+}
+
+.btn-remove:hover {
+    background-color: lightsalmon;
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+.add-todo {
+    background-color: #fdf795;
+    padding: 10px;
+    flex-grow: 1;
+}
+
+.todo-filter {
+    background-color: burlywood;
+    padding: 10px;
+    flex-basis: 10%;
+}
+.todo-stat {
+    background-color: yellow;
+    padding: 10px;
+    flex-grow: 1;
+}
+.input-todo {
+    background-color: rgba(206, 46, 46, 0);
+    border-width: 0px 0px 2px 0px;
+    width: 100px;
+    transition: ease-in-out, width .35s ease-in-out;
+    font-family: 'Indie Flower', cursive;
+    font-size: 20px;
+}
+.input-todo:focus {
+    font-family: 'Indie Flower', cursive;
+    outline: none;
+    width: 250px;
+}
+/*Flexbox*/
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+}
+

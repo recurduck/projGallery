@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <h2>Welcome to my bookshop</h2>
+        <button onclick="toogleAddBook(this)">+</button>
+    </div>
+    <div class="add-bar">
+        <label for="input-booktitle">Book Title:</label>
+        <input type="text" id="input-booktitle" />
+        <label for="input-bookprice">Book Price:</label>
+        <input type="number" id="input-bookprice" />
+        <button onclick="onAddBook()">Add Book</button>
+    </div>
+    <div class="main-container">
+        <div class="modal" onclick="onReadBook()"></div>
+        <div class="main"></div>
+    </div>
+    <div class="footer">cofferights</div>
+
+    <script src="js/util-service.js"></script>
+    <script src="js/storage-service.js"></script>
+    <script src="js/book-service.js"></script>
+    <script src="js/book-controler.js"></script>
+</body>
+</html>

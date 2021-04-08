@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'digital-7';
+    src: url('font/digital-7.ttf');
+}
+body {
+    background-color: burlywood;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+button {
+    background-color: aliceblue;
+    border-radius: 35%;
+    width: 30px;
+    height: 30px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: rgb(174, 203, 228);
+}
+
+button:focus {
+    outline: none;
+}
+
+
+.app {
+    background-color: darkslategrey;
+    display: inline-block;
+    padding: 10px;
+    border: 5px solid;
+    border-style: outset;
+    border-color: -internal-light-dark(rgb(112, 112, 112),rgb(82, 82, 82));
+    border-radius: 10px;
+}
+
+.screen {
+    background-color: grey;
+    padding: 0px 10px;
+    text-align: right;
+    font-size: x-large;
+    font-family: 'digital-7', sans-serif;
+    border-radius: 10px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(133, 133, 133),rgb(118, 118, 118));
+    border-image: initial;
+}
+

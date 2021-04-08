@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Guess Pictures</title>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body lenguage='en' onload=""> 
+        <h1>Touch the Numbers</h1>
+        <div class="container">
+            <div calss="level">
+                <input type="radio" id="1" name="level" value="4" onclick="init(this)" checked><label>Simple</label>
+                <input type="radio" id="2" name="level" value="5" onclick="init(this)"><label>Moderate</label>
+                <input type="radio" id="3" name="level" value="6" onclick="init(this)"><label>Hard</label>
+            </div>
+            <div class="timer">Game Time: <span></span></div>
+            <div class="next">Next Number: <span></span></span></div>
+            <table>
+                <tbody class="board">
+                </tbody>
+            </table>    
+        </div>
+        <!-- <button class="Btn startBtn" onclick="initGame()">Start</button> -->
+
+        <script src="js/util.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
